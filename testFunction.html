@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+    function printFarmInventory(cows, chickens) {
+      cowString = String(cows);
+      while (cowString.length < 3) {
+        cowString = '0' + cowString;
+      }
+      console.log(`Cows: ${cowString}`)
+
+      chickenString = String(chickens);
+      while (chickenString.length < 3) {
+        chickenString = '0' + chickenString;
+      }
+      console.log(`Chickens: ${chickenString}`)
+    };
+
+    printFarmInventory(7000, 110);
+    </script>
+  </body>
+</html>

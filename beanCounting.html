@@ -21,15 +21,15 @@
     // argument that indicates the character that is to be counted (rather than counting only 
     // uppercase “B” characters). Rewrite countBs to make use of this new function.
 
-    function countBs(string) {
-      let numBs = 0;
-      for (let i = 0; i < string.length; i++) {
-        if (string[i] == 'B') {
-          numBs += 1;
-        }
-      }
-      return numBs;
-    }
+    // function countBs(string) {
+    //   let numBs = 0;
+    //   for (let i = 0; i < string.length; i++) {
+    //     if (string[i] == 'B') {
+    //       numBs += 1;
+    //     }
+    //   }
+    //   return numBs;
+    // }
 
     function countChar(string, char) {
       let numChars = 0;
@@ -39,6 +39,10 @@
         }
       }
       return numChars;
+    }
+
+    function countBs(string) {
+      return countChar(string, 'B');
     }
 
     </script>

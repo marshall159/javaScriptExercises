@@ -9,10 +9,16 @@
 // Next, write a sum function that takes an array of numbers and returns the sum of
 // these numbers. Run the example program and see whether it does indeed return 55.
 
-function range(a, b) {
+function range(start, end, step = start < end ? 1 : -1) {
     let arr = [];
-    for (a; a <= b; a++) {
-        arr.push(a);
+    if (step > 0) {
+        for (let i = start; i <= end; i+= step) {
+            arr.push(i);
+        }
+    } else {
+        for (let i = start; i >= end; i+= step) {
+            arr.push(i);
+        }
     }
     return arr;
 }

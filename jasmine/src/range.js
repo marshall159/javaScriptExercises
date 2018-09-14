@@ -16,3 +16,11 @@ function range(a, b) {
     }
     return arr;
 }
+
+function sum(arr) {
+    let res = 0;
+    for (let num of arr) {
+        res += num;
+    }
+    return res;
+}

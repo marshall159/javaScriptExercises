@@ -11,7 +11,14 @@
 
 describe('range', function () {
     it('returns an array of numbers from start to end', function () {
-        expect(range(1, 7)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        expect(range(1, 10)).toEqual(arr);
     });
 });
 
+describe('sum', function () {
+    it('sums the values of an array of numbers', function () {
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        expect(sum(arr)).toEqual(55);
+    });
+});
